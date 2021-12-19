@@ -20,7 +20,8 @@ session.delete(detail);
 @OneToOne(mappedBy = "empDetail", cascade = CascadeType.ALL)    
 private Employee employee;  
 
-Eсли этому полю присвоить ссылку на parent, то при save(child), если прописан каскад, то сохранится и parent.  
+Когда этому полю присвоена ссылка на parent, то при save(child), если прописан каскад, то сохранится и parent. Удаление child приведёт и к удалению parent'a  
+
 
 
 
