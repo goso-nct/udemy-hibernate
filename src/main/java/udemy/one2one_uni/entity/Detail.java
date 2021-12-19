@@ -3,7 +3,7 @@ package udemy.one2one_uni.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "details_o2o_uni")
+@Table(name = "details_o2o")
 public class Detail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

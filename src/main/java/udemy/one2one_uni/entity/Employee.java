@@ -3,7 +3,7 @@ package udemy.one2one_uni.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employees_o2o_uni")
+@Table(name = "employees_o2o")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,7 +23,7 @@ public class Employee {
     private Integer salary;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "details_id") // FK на Detail.id
+    @JoinColumn(name = "detail_id") // FK на Detail.id
     private Detail empDetail;
 
     public Employee() {}
